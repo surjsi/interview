@@ -10,7 +10,7 @@ class LCaStatus{
 	}
 	
 }
-public class LowestCommonAncestor4 {
+public class Tree4_LowestCommonAncestor {
 	
 	public static void main(String[] args) {
 		Node node = new Node();

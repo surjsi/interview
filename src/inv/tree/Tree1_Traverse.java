@@ -1,6 +1,6 @@
 package inv.tree;
 
-public class Traverse1 {
+public class Tree1_Traverse {
 	
 	public static void main(String[] args) {
 		Node node = new Node();

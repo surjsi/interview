@@ -13,7 +13,7 @@ class BalancedTree{
 	}
 	
 }
-public class HeightBalanced2 {
+public class Tree2_HeightBalanced {
 	
 	public static void main(String[] args) {
 		Node node = new Node();

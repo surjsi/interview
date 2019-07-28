@@ -1,6 +1,6 @@
 package inv.tree;
 
-public class SymmetricTree3 {
+public class Tree3_SymmetricTree {
 
 	public static void main(String[] args) {
 		testPositive();
