@@ -7,6 +7,7 @@ public class Node {
 	public Node left;
 	public Node right;
 	public Node parent;
+	public int noOfSubNodes = 0;
 	public Node() {}
 	public Node(String name, Integer value, Node left, Node right) {
 		this.name = name;
@@ -68,6 +69,18 @@ public class Node {
 		Node B = new Node("B", 6, C, F);
 		Node I = new Node("I", 6, J, O);
 		Node root = new Node("A", 314, B, I);
+		
+		root.noOfSubNodes = 16;
+		B.noOfSubNodes = 6;
+		C.noOfSubNodes = 2;
+		F.noOfSubNodes = 2;
+		G.noOfSubNodes = 1;
+		I.noOfSubNodes = 8;
+		O.noOfSubNodes = 1;
+		J.noOfSubNodes = 5;
+		K.noOfSubNodes = 4;
+		L.noOfSubNodes = 2;
+		M.noOfSubNodes = 1;
 		
 		I.parent = root;
 		J.parent = I;
