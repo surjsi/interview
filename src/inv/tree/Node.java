@@ -44,6 +44,13 @@ public class Node {
 	                     			     \
 	                     			       \
 	                     			      M(641) 
+	                     			     /
+	                     			   /
+	                     			  Q(23)
+	   
+
+	      [D, C, E, B, F, H, G, A, J, L, Q, M, K, N, I, O, P]
+
 		 */
 		
 		Node Q = new Node("Q", 23, null, null);
@@ -91,6 +98,7 @@ public class Node {
 		M.parent = L;
 		P.parent = O;
 		
+		
 		B.parent = root;
 		C.parent = B;
 		F.parent = B;
@@ -98,6 +106,7 @@ public class Node {
 		E.parent = C;
 		G.parent = F;
 		H.parent = G;
+		Q.parent = M;
 		return root;
 	}
 }
