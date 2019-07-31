@@ -7,6 +7,7 @@ public class Node {
 	public Node left;
 	public Node right;
 	public Node parent;
+	public Node next;
 	public int noOfSubNodes = 0;
 	public Node() {}
 	public Node(String name, Integer value, Node left, Node right) {
@@ -107,6 +108,43 @@ public class Node {
 		G.parent = F;
 		H.parent = G;
 		Q.parent = M;
+		return root;
+	}
+	
+	/*
+	                         A
+	                      /      \
+	                   /            \
+	                /                  \
+	             B                        I
+	          /     \                   /    \
+	       /           \             /          \
+	     C               F         J             M
+	  /    \           /   \      /  \         /   \
+	/        \       /       \  /      \      /      \
+  D            E    G         H K       L    N        O
+	 */
+	public Node getPerfectTree() {
+		
+		
+		Node D = new Node("D", 28, null, null);
+		Node E = new Node("E", 0, null, null);
+		Node G = new Node("G", 3, null, null);
+		Node H = new Node("H", 17, null, null);
+		Node K = new Node("K", 1, null, null);
+		Node L = new Node("L", 401, null, null);
+		Node N = new Node("N", 257, null, null);
+		Node O = new Node("O", 271, null, null);
+		
+		Node C = new Node("C", 271, D, E);
+		Node F = new Node("F", 561, G, H);
+		Node J = new Node("J", 2, K, L);
+		Node M = new Node("M", 641, N, O);
+		
+		Node B = new Node("B", 6, C, F);
+		Node I = new Node("I", 6, J, M);
+		Node root = new Node("A", 314, B, I);
+		
 		return root;
 	}
 }
